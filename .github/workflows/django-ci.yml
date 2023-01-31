@@ -19,11 +19,9 @@ jobs:
 
       - name: Create Release
         uses: ncipollo/release-action@v1
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}        
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
         with:
           tag: ${{ steps.changelog.outputs.tag }}
           name: Release ${{ steps.changelog.outputs.tag }}
