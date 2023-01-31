@@ -3,8 +3,7 @@ name: Releases
 on: [push]
 
 jobs:
-  changelog:
-  
+  changelog:  
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/release'
     steps:
