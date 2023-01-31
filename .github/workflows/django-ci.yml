@@ -16,6 +16,7 @@ jobs:
           version-path: 'version'
           git-user-name: 'GitHub Actions'
           git-user-email: 'kevogaba@gmail.com'
+          skip-on-empty: 'true'
 
       - name: Create Release
         uses: ncipollo/release-action@v1
