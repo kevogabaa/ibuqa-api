@@ -49,7 +49,7 @@ jobs:
     - name: Change some files
       run: echo 'adding a new commit now' >> READMExs.md
     - name: Commit changes to README.md file
-      run: git commit -m "this is bot" READMEsdf.md
+      run: git commit -m "this is bot" READMExs.md
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIT_AUTHOR_NAME: ${{ steps.import-gpg.outputs.name }}
