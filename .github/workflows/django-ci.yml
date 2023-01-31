@@ -22,6 +22,7 @@ jobs:
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
         with:
           tag: ${{ steps.changelog.outputs.tag }}
           name: Release ${{ steps.changelog.outputs.tag }}
